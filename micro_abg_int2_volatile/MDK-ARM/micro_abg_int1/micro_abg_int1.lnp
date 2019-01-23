@@ -1,0 +1,24 @@
+--cpu=Cortex-M4.fp
+"micro_abg_int1\startup_stm32f411xe.o"
+"micro_abg_int1\main.o"
+"micro_abg_int1\stm32f4xx_it.o"
+"micro_abg_int1\stm32f4xx_hal_msp.o"
+"micro_abg_int1\stm32f4xx_hal_tim.o"
+"micro_abg_int1\stm32f4xx_hal_tim_ex.o"
+"micro_abg_int1\stm32f4xx_hal_rcc.o"
+"micro_abg_int1\stm32f4xx_hal_rcc_ex.o"
+"micro_abg_int1\stm32f4xx_hal_flash.o"
+"micro_abg_int1\stm32f4xx_hal_flash_ex.o"
+"micro_abg_int1\stm32f4xx_hal_flash_ramfunc.o"
+"micro_abg_int1\stm32f4xx_hal_gpio.o"
+"micro_abg_int1\stm32f4xx_hal_dma_ex.o"
+"micro_abg_int1\stm32f4xx_hal_dma.o"
+"micro_abg_int1\stm32f4xx_hal_pwr.o"
+"micro_abg_int1\stm32f4xx_hal_pwr_ex.o"
+"micro_abg_int1\stm32f4xx_hal_cortex.o"
+"micro_abg_int1\stm32f4xx_hal.o"
+"micro_abg_int1\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "micro_abg_int1\micro_abg_int1.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "micro_abg_int1.map" -o micro_abg_int1\micro_abg_int1.axf
